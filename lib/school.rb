@@ -14,4 +14,8 @@ class School
   def grade(grade)
     roster[grade]
   end
+
+  def sort
+    roster.map {|k, v| v.sort     }
+  end
 end
