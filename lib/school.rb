@@ -17,8 +17,8 @@ class School
 
   def sort
     obj = {}
-    
-    roster.each do |grade, student| 
+
+    roster.each do |grade, student|
       obj[grade] = student.sort
     end
 
