@@ -9,6 +9,6 @@ class School
 
   def add_student(name, grade)
 binding.pry
-    @roster.has_key? "grade" ? roster[:grade] << name : roster[:grade] = [name]
+    @roster.has_key?(grade) ? roster[:grade] << name : roster[:grade] = [name]
   end
 end
