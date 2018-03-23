@@ -8,7 +8,8 @@ class School
   end
 
   def add_student(name, grade)
-binding.pry
+
     @roster.has_key?(grade) ? roster[grade] << name : roster[grade] = [name]
+    binding.pry
   end
 end
