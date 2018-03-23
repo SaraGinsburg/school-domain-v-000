@@ -16,6 +16,12 @@ class School
   end
 
   def sort
-    roster.map {|k, v| k[v.sort]}
+    obj = {}
+    
+    roster.each do |grade, student| 
+      obj[grade] = student.sort
+    end
+
+    obj
   end
 end
