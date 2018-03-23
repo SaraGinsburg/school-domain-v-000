@@ -15,13 +15,15 @@ class School
     roster[grade]
   end
 
+
   def sort
     obj = {}
 
-    roster.each do |grade, student|
-      obj[grade] = student.sort
+    roster.each do |grade, students|
+      obj[grade] = students.sort
     end
-
     obj
   end
+
+  
 end
